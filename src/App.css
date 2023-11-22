@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+#root {
+  background-color: var(--body_background);
+  color: var(--body_color);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+  background-color: #151312;
+  height: 100px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.page-hero-wrapper {
+  height: 425px;
+  overflow: hidden;
   display: flex;
-  flex-direction: column;
+  position: relative;
+  transition: .35s opacity ease-in-out;
+  background-color: #000;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+.page-hero-image {
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.page-hero-header-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  display: flex;
+  width: 100%;
+  height: 425px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  text-align: center;
+  transition: 1.5s opacity ease-in-out;
+  opacity: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.header-text-1 {
+  font-size: 42px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 6px #333;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-text-2 {
+  font-size: 42px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-top: -18px;
+  text-shadow: 3px 3px 6px #333;
+}
+
+.bank_space {
+  height: 100px;
+}
+
+.footer {
+  background-color: #0B1E3B;
+  min-height: 115px;
+  font-weight: bolder;
+  color: #230F2B;
+  padding-top: 140px;
+}
+
+.magicpattern2 {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: repeat;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg width=%222000%22 height=%221000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3ClinearGradient id=%22a%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%23fff%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%23fff%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Cpath fill=%22%23151312%22 d=%22M0 0h2000v1000H0z%22%2F%3E%3Cpath d=%22M0 500c75.715 17.157 151.43 34.313 239 15 87.57-19.313 186.994-75.097 266-69 79.006 6.097 137.594 74.073 220 92 82.406 17.927 188.631-14.196 285-25s182.882-.288 264-3 156.84-18.653 241 2 176.76 77.901 259 82c82.24 4.099 154.12-44.95 266-94l-40 500H0Z%22 fill=%22url(%23a)%22%2F%3E%3C%2Fsvg%3E");
 }
